@@ -45,8 +45,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/chiefcipher/manage-landing-page-master.git)
+- Live Site URL: [Add live site URL here](https://chiefcipher.github.io/manage-landing-page-master/)
 
 ## My process
 
