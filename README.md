@@ -65,7 +65,7 @@ Users should be able to:
 
 ### Continued development
 - Node.js and backend development 
-- 
+
 ## Author
 
 - Website - [Samuel Yakubu](http://chiefcipher.netlify.app/)
