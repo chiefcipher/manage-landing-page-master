@@ -105,7 +105,7 @@ const footerEmailHandler = ()=> {
 
 
 const verifyEmail = (email)=> { 
-  
+    
   if (email.length == 0 ) { 
     return  1
   }
@@ -113,3 +113,4 @@ const verifyEmail = (email)=> {
     return 0
   }
 }
+
