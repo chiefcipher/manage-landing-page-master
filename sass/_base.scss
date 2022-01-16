@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Be Vietnam";
+  src: url("../f/BeVietnam-Regular.ttf");
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &-topbg,
+  &-middlebg {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-topbg {
+    top: 0;
+    right: 0;
+    max-width: 75vw;
+    
+    @include respond-maxw ( $bp-mobile ) { 
+      max-width: 90vw;
+      transform: translate(12%, -12%);
+    }
+    
+    @include respondBoth ( $bp-mobile , 800px ) { 
+      max-width: 85vw;
+      transform: translate(12%, -12%);
+    }
+
+    @include respond-minw (800px) { 
+      max-width: 73vw;
+      transform: translate(20%, -25%);
+    }
+  }
+
+  &-middlebg {
+    left: 0;
+    top: 45%;
+    transform: translate(-70%, 0);
+  }
+}

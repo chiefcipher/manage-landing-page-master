@@ -1,0 +1,16 @@
+
+@import "variables" ; //HOLDS VARIABLE DEFINITIONS USED IN THE PROJECT 
+@import "mixins" ; //HOLDS MIXINS DEFINITIONS USED IN PROJECT 
+
+@import "reset" ;//GLOBAL RESET  
+@import "base" ; 
+
+@import "utilities" ; //STYLING FOR UTILITY CLASSES 
+@import "components"; //STYLING     FOR COMPONENTS 
+@import "s-nav" ; // STYLING FOR NAVIGATION 
+@import "s-hero" ; //HERO SECTION
+@import "s-difference" ; // DIFFERENCE SECTION 
+@import "s-comments" ; //COMMENTS SECTION 
+@import "s-simplify" ; //SIMPLIFY SECTION 
+@import "s-footer" ; //FOOTER SECTION 
+ 

@@ -1,0 +1,21 @@
+{
+  "name": "manage-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Manage landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "live-server --browser=firefox",
+    "watch": "node-sass sass/main.scss css/main.css -w ",
+    "live": "npm-run-all -p watch server ",
+    "compile-once": "node-sass sass/main.scss css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.0",
+    "npm-run-all": "^4.1.5" 
+  }
+}

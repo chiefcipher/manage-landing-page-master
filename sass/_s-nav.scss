@@ -1,0 +1,141 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 10%;
+
+  position: absolute;
+  top: 4vh;
+  left: 0;
+  font-size: $f-size-default;
+
+
+
+  @include respond-maxw ($bp-1000) { 
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  &__logo {
+    width: 20rem;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  &__item {
+    a {
+      display: block;
+      font-size: inherit;
+      font-family: inherit;
+      padding: 1rem 1.5rem;
+
+      @include respond-maxw ($bp-1000) { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: hsl(233, 12%, 35%);
+
+      &:hover {
+        color: hsl(233, 12%, 65%);
+      }
+    }
+  }
+
+  &__icon {
+    position: relative;
+    overflow-x: hidden;
+
+    display: block;
+    height: 3rem;
+    width: 3rem;
+
+    div {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &::before,
+      &::after,
+      & {
+        background: #000;
+        height: 3px;
+        width: 3rem;
+        transition: 0.2s linear;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+      }
+      &::before {
+        top: -8px;
+      }
+      &::after {
+        bottom: -8px;
+      }
+    }
+
+    &.open div {
+      transform: translateX(50px);
+
+      &::before {
+        top: 0;
+        transform: translateX(-50px) translateX(-50%) rotate(45deg);
+      }
+      &::after {
+        bottom: 0;
+        transform: translateX(-50px) translateX(-50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &.mobile-nav {
+    position: relative;
+
+    .nav__items {
+      display: none; //JAVASCRIPT CHANGES THIS TO BLOCK WHEN REQUIRED
+      list-style: none;
+      z-index: 10;
+      background: $c-very-light-gray;
+
+      width: 90%;
+      transform: translate(-50%);
+      position: absolute;
+      top: 8vh;
+      left: 50%;
+      box-shadow: 0 0 0.5px rgba(#000, 0.2);
+      border-radius: 3px;
+
+      &.open {
+        display: block;
+      }
+      &.open.none {
+        display: none;
+      }
+    }
+
+    .nav__item {
+      a {
+        padding: 2rem 0;
+        text-align: center;
+      }
+    }
+
+    .nav__btn {
+      display: none;
+    }
+  }
+}

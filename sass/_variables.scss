@@ -1,0 +1,22 @@
+//BREAKPOINTS (MEDIA QUERIES)
+$bp-mobile: 375px;
+$bp-desktop: 1440px;
+$bp-1200: 1200px;
+$bp-1000: 1000px;
+
+// COLORS
+//primary
+$c-bright-red: hsl(12, 88%, 59%); 
+$c-dark-blue: hsl(228, 39%, 23%);
+
+//neutral
+$c-dark-grayish-blue: hsl(227, 12%, 61%);
+$c-dark-grayish-blue-p: hsl(227, 12%, 41%); //personalized to increase constrast
+$c-very-dark-blue: hsl(233, 12%, 13%);
+$c-very-pale-red: hsl(13, 100%, 96%);
+$c-very-light-gray: hsl(0, 0%, 98%);
+
+//TYPOGRAPHY
+$f-size-default: 1.6rem;
+$f-vietnam: "Be Vietnam";
+

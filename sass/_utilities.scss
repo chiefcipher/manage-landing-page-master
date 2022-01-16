@@ -1,0 +1,53 @@
+.no-deco {
+  text-decoration: none;
+}
+
+.no-outline-border {
+  outline: none;
+  border: none;
+}
+
+//CENTRALIZE CONTAINER USING ITS WIDTH AND MARGIN
+.center-u-width {
+  width: 80%;
+  margin: 0 auto;
+
+  @include respond-maxw ($bp-1000 ) { 
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+//CENTRALIZE CONTAINER USING PADDING
+.center-u-margin {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  //GO TO SECTION CSS FILE TO INPUT YOUR TOP AND BOTTOM PADDING AS WANTER
+
+  @include respond-maxw ($bp-1000) { 
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+//POINTER CURSOR
+.p-cursor {
+  cursor: pointer;
+}
+
+//LINE HEIGHT 2
+.lh-2 {
+  line-height: 2;
+}
+
+//COLOR DARK-GRAYISH-BLUE
+.c-d-g-b {
+  color: $c-dark-grayish-blue-p;
+}
+
+//COLOR DARK BLUE
+.c-d-b {
+  color: $c-dark-blue;
+}

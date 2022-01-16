@@ -1,0 +1,113 @@
+.comments {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+
+  .carousel {
+    font-size: 1.6rem;
+    font-family: $f-vietnam;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    //POSITIONING FOR CAROUSEL BLOCKS CONTAINER AND INDIVIDUAL BLOCKS
+    //MANY THINGS DONE HERE WITH RESPECT TO WIDTH OF CAROUSEL INDIVIDUAL BLOCKS IS RELATED TO ITS JAVASCRIPT FUNCTION REFERENCE AT  MAIN.JS CALLED MVOECAROUSEL()
+    &__blocks {
+      display: flex;
+    }
+    &__block {
+      flex-wrap: nowrap;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    //STYLING FOR CAROUSEL BLOCKS CONTAINER AND INDIVIDUAL BLOCKS
+    &__blocks {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      padding: 4rem 0;
+      max-width: 100%;
+    }
+    &__block {
+      align-items: center;
+      background: rgba($c-dark-grayish-blue-p, 0.082);
+      margin: 0 20px;
+      padding: 0 3rem;
+      padding-bottom: 3rem;
+      text-align: center;
+      width: 80vw;
+
+      @include respond-minw (600px)  { 
+        max-width: 550px;
+      }
+
+      &--img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        margin-top: -4rem;
+        margin-bottom: 3rem;
+      }
+
+      &--name {
+        font-weight: 700;
+        margin-bottom: 3rem;
+      }
+      &--comment {
+        color: $c-dark-grayish-blue-p;
+        line-height: 2;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      width: calc(1rem * 5);
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 7rem;
+
+      .icon,
+      .icon::before {
+        border-radius: 50%;
+      }
+      .icon {
+        width: 1rem;
+        height: 1rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: $c-bright-red;
+      }
+
+      .icon::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: 1px solid white;
+        background: $c-very-light-gray;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0.75rem;
+        height: 0.75rem;
+      }
+
+      .icon.active::before {
+        background: $c-bright-red;
+      }
+    }
+}
+
+  &__btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,48 @@
+.btn {
+  outline: none;
+  border: none;
+  font-family: $f-vietnam, sans-serif;
+
+  &__get-started {
+    padding: 1.3rem 2.8rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    &--redbg {
+      background: $c-bright-red;
+      color: $c-very-light-gray;
+      box-shadow: 0 2px 5px rgba($c-bright-red, 0.5);
+      &:hover {
+        background: lighten($c-bright-red, 10%);
+      } 
+
+
+    }
+
+    &--whitebg {
+      background: $c-very-light-gray;
+      color: $c-bright-red;
+
+      &:hover {
+        color: lighten($c-bright-red, 10%);
+      }
+    }
+  }
+
+  &__numbers {
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    background: $c-bright-red;
+    color: $c-very-light-gray;
+  }
+}
+
+.heading {
+  &-2 {
+    font-size: 3rem;
+    color: $c-dark-blue;
+  }
+}

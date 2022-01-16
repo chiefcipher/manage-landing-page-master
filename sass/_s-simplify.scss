@@ -1,0 +1,34 @@
+.simplify {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  justify-content: space-between;
+  background-image: url("../images/bg-simplify-section-mobile.svg"),
+    linear-gradient(to right, rgba($c-bright-red, 1), rgba($c-bright-red, 1));
+  background-size: contain;
+
+  @include respond-maxw (700px ) { 
+    background-image: url("../images/bg-simplify-section-desktop.svg"),
+      linear-gradient(to right, rgba($c-bright-red, 1), rgba($c-bright-red, 1));
+    background-size: cover;
+  }
+
+  background-repeat: no-repeat;
+
+  @include respond-maxw (700px ) { 
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+  }
+  
+  h1 {
+    font-size: 3rem;
+    max-width: 40rem;
+    color: $c-very-light-gray;
+  }
+}
